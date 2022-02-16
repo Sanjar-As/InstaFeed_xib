@@ -14,6 +14,16 @@
 		B8A4257427BA548F00558197 /* InstaSign.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B8A4257227BA548F00558197 /* InstaSign.xcdatamodeld */; };
 		B8A4257627BA549000558197 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B8A4257527BA549000558197 /* Assets.xcassets */; };
 		B8A4257927BA549000558197 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8A4257727BA549000558197 /* LaunchScreen.storyboard */; };
+		B8A4258427BA54D800558197 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8A4258227BA54D800558197 /* HomeViewController.swift */; };
+		B8A4258527BA54D800558197 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B8A4258327BA54D800558197 /* HomeViewController.xib */; };
+		B8A4258827BA54F000558197 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8A4258627BA54F000558197 /* SignInViewController.swift */; };
+		B8A4258927BA54F000558197 /* SignInViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B8A4258727BA54F000558197 /* SignInViewController.xib */; };
+		B8A4258D27BA550D00558197 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8A4258B27BA550D00558197 /* SignUpViewController.swift */; };
+		B8A4258E27BA550D00558197 /* SignUpViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B8A4258C27BA550D00558197 /* SignUpViewController.xib */; };
+		B8A4259027BA718200558197 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8A4258F27BA718200558197 /* BaseViewController.swift */; };
+		B8EF90D627BBC09E00E97BBD /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8EF90D527BBC09E00E97BBD /* Post.swift */; };
+		B8EF90DA27BBC21C00E97BBD /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8EF90D827BBC21C00E97BBD /* PostTableViewCell.swift */; };
+		B8EF90DB27BBC21C00E97BBD /* PostTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B8EF90D927BBC21C00E97BBD /* PostTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +36,16 @@
 		B8A4257527BA549000558197 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B8A4257827BA549000558197 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B8A4257A27BA549000558197 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B8A4258227BA54D800558197 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		B8A4258327BA54D800558197 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		B8A4258627BA54F000558197 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		B8A4258727BA54F000558197 /* SignInViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignInViewController.xib; sourceTree = "<group>"; };
+		B8A4258B27BA550D00558197 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		B8A4258C27BA550D00558197 /* SignUpViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignUpViewController.xib; sourceTree = "<group>"; };
+		B8A4258F27BA718200558197 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		B8EF90D527BBC09E00E97BBD /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		B8EF90D827BBC21C00E97BBD /* PostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
+		B8EF90D927BBC21C00E97BBD /* PostTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,16 +78,58 @@
 		B8A4256827BA548F00558197 /* InstaSign */ = {
 			isa = PBXGroup;
 			children = (
+				B8EF90D727BBC1FE00E97BBD /* cell */,
+				B8EF90D427BBC08A00E97BBD /* model */,
+				B8A4258027BA549700558197 /* controllers */,
 				B8A4256927BA548F00558197 /* AppDelegate.swift */,
 				B8A4256B27BA548F00558197 /* SceneDelegate.swift */,
+				B8A4257A27BA549000558197 /* Info.plist */,
+				B8A4258127BA54A900558197 /* app_utilities */,
+			);
+			path = InstaSign;
+			sourceTree = "<group>";
+		};
+		B8A4258027BA549700558197 /* controllers */ = {
+			isa = PBXGroup;
+			children = (
+				B8A4258F27BA718200558197 /* BaseViewController.swift */,
+				B8A4258227BA54D800558197 /* HomeViewController.swift */,
+				B8A4258327BA54D800558197 /* HomeViewController.xib */,
+				B8A4258627BA54F000558197 /* SignInViewController.swift */,
+				B8A4258727BA54F000558197 /* SignInViewController.xib */,
+				B8A4258B27BA550D00558197 /* SignUpViewController.swift */,
+				B8A4258C27BA550D00558197 /* SignUpViewController.xib */,
+			);
+			path = controllers;
+			sourceTree = "<group>";
+		};
+		B8A4258127BA54A900558197 /* app_utilities */ = {
+			isa = PBXGroup;
+			children = (
 				B8A4256D27BA548F00558197 /* ViewController.swift */,
 				B8A4256F27BA548F00558197 /* Main.storyboard */,
 				B8A4257527BA549000558197 /* Assets.xcassets */,
 				B8A4257727BA549000558197 /* LaunchScreen.storyboard */,
-				B8A4257A27BA549000558197 /* Info.plist */,
 				B8A4257227BA548F00558197 /* InstaSign.xcdatamodeld */,
 			);
-			path = InstaSign;
+			path = app_utilities;
+			sourceTree = "<group>";
+		};
+		B8EF90D427BBC08A00E97BBD /* model */ = {
+			isa = PBXGroup;
+			children = (
+				B8EF90D527BBC09E00E97BBD /* Post.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		B8EF90D727BBC1FE00E97BBD /* cell */ = {
+			isa = PBXGroup;
+			children = (
+				B8EF90D827BBC21C00E97BBD /* PostTableViewCell.swift */,
+				B8EF90D927BBC21C00E97BBD /* PostTableViewCell.xib */,
+			);
+			path = cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -128,9 +190,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B8A4258927BA54F000558197 /* SignInViewController.xib in Resources */,
 				B8A4257927BA549000558197 /* LaunchScreen.storyboard in Resources */,
 				B8A4257627BA549000558197 /* Assets.xcassets in Resources */,
 				B8A4257127BA548F00558197 /* Main.storyboard in Resources */,
+				B8EF90DB27BBC21C00E97BBD /* PostTableViewCell.xib in Resources */,
+				B8A4258E27BA550D00558197 /* SignUpViewController.xib in Resources */,
+				B8A4258527BA54D800558197 /* HomeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,8 +207,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B8A4258427BA54D800558197 /* HomeViewController.swift in Sources */,
+				B8A4258D27BA550D00558197 /* SignUpViewController.swift in Sources */,
 				B8A4256E27BA548F00558197 /* ViewController.swift in Sources */,
+				B8A4258827BA54F000558197 /* SignInViewController.swift in Sources */,
 				B8A4256A27BA548F00558197 /* AppDelegate.swift in Sources */,
+				B8A4259027BA718200558197 /* BaseViewController.swift in Sources */,
+				B8EF90D627BBC09E00E97BBD /* Post.swift in Sources */,
+				B8EF90DA27BBC21C00E97BBD /* PostTableViewCell.swift in Sources */,
 				B8A4257427BA548F00558197 /* InstaSign.xcdatamodeld in Sources */,
 				B8A4256C27BA548F00558197 /* SceneDelegate.swift in Sources */,
 			);
